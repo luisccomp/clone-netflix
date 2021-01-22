@@ -1,0 +1,109 @@
+/* Criando variáveis no CSS 3 */
+:root {
+    --red: #E50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base */
+body {
+    background: var(--black);
+    color: #FFF;
+    font-family: 'Arial', Times, serif;
+}
+
+header .container {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .logo {
+    color: var(--red);
+    font-size: 40px;
+    font-family: 'Arial Black', Times;
+}
+
+header .container .logo a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #FFF;
+}
+
+/* Demais elementos */
+.filme-principal {
+    font-size: 18px;
+    font-size: 400;
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)100%), url('/img/house-of-cards-banner.jpg');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.titulo {
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    font-size: 15px;
+    color: #AAA;
+    background-color: rgba(0, 0, 0, .50);
+    padding: 15px;
+    border: none;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.filme-principal .container {
+    width: 60%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
+}
